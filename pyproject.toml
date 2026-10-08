@@ -6,10 +6,17 @@ authors = [
     { name = "pincou", email = "792936825@qq.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "ipykernel>=7.4.0",
+    "notebook>=7.6.3",
+]
 
 [project.scripts]
 deep-learning-note = "deep_learning_note:main"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
